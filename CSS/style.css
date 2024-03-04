@@ -1,0 +1,227 @@
+/* CSS reset  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* CSS varaibles */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    
+    
+}
+/* Navigation bar:Logo and images */
+#logo{
+    margin: 13px 38px;
+
+}
+#logo img{
+   width: 66px;
+    margin: -1px -11px;
+    
+}
+
+/* Navigation bar:List styling  */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Signika Negative', sans-serif;
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+   padding: 4px 22px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    
+}
+/* Home Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 563px;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+ background:url(../—Pngtree—food\ seasoning_384376\ \(1\).jpg) no-repeat center center/cover;
+
+height: 100%;
+width: 100%;
+
+ z-index: -1;
+ opacity: 0.9;
+    
+   
+}
+/* Services Section  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 19px;
+    margin: 3px 6px;
+    border-radius: 30px;
+    background-color:  #ede6f1;
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;/* This only work when display is block*/
+}
+#services .box p{
+    font-family: 'Signika Negative', sans-serif;
+
+}
+/* Clients Section  */
+#clients-section{
+    position: relative;
+    height: 350px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients::before{
+    content: "";
+    position: absolute;
+    background: url(../pexels-jane-doan-1092730.jpg) no-repeat center center;
+    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+.client-item{
+    padding: 30px;
+}
+#clients img{
+  height:130px;
+}
+/* Contact Section  */
+#contact{
+    position: relative;
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(../smartphone-571961_1920.jpg) no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+    
+}
+#contact-box  label{
+    font-family: 'Signika Negative', sans-serif;
+    
+    font-size: 1.4rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 10px;
+
+}
+footer{
+    background-color: black;
+    color: rgb(248, 248, 3);
+    padding: 6px 20px
+}
+
+/* Utility classes */
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Lora', serif;
+   
+}
+.h-primary{
+    font-family: 'Lora', serif;
+    font-size: 3.8rem;
+}
+
+.h-secondary{
+    font-family: 'Lora', serif;
+    font-size: 2.3rem;
+    padding: 15px;
+    text-align: center;
+}
+.btn{
+    padding: 9px 10px;
+    margin: 15px 580px;
+    border: 2px solid white;
+    background-color: rgb(209, 85, 27);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover{
+    
+    background-color: rgb(241, 82, 7);
+    
+}
+.center{
+    text-align: center;
+}
+
+
+
+
