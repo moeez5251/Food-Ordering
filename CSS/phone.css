@@ -43,14 +43,23 @@ flex-direction: column;
     height: auto;
 
 }
-
+#clients::before {
+    content: "";
+    position: absolute;
+    background: url(../pexels-jane-doan-1092730.jpg) no-repeat center center;
+    height: 125%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
 
 #clients{
     overflow: hidden;
    flex-wrap: wrap;
 }
 #clients img{
-    height: 100px;
+   
+    height: 80px;
 }
 
 /* Contact section  */
